@@ -14,7 +14,7 @@ jobs:
       - run: pip install nbconvert Pint matplotlib scipy ipykernel open-atmos-jupyter-utils
       - uses: actions/checkout@v4
       - run: sudo apt-get install pandoc texlive-xetex inkscape
-      - run: python -m nbconvert --to pdf lab_02/lab_02.ipynb --execute
+      - run: python -m nbconvert --to pdf lab_03/lab_03.ipynb --execute
       - uses: actions/upload-artifact@v4
         with:
-          path: lab_02/lab_02.pdf
+          path: lab_03/lab_03.pdf
