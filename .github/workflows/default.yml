@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: pip install --upgrade pip
-      - run: pip install nbconvert pint matplotlib scipy ipykernel open-atmos-jupyter-utils nbqa 
+      - run: pip install nbconvert pint tqdm matplotlib scipy ipykernel open-atmos-jupyter-utils nbqa 
       - uses: actions/checkout@v4
       - run: sudo apt-get update
       - run: sudo apt-get install pandoc texlive-xetex inkscape
