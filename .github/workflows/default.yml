@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - run: pip install --upgrade pip
-      - run: pip install nbconvert Pint matplotlib scipy ipykernel open-atmos-jupyter-utils
+      - run: pip install nbconvert pint matplotlib scipy ipykernel open-atmos-jupyter-utils nbqa 
       - uses: actions/checkout@v4
       - run: sudo apt-get update
       - run: sudo apt-get install pandoc texlive-xetex inkscape
-      - run: python -m nbconvert --to pdf lab_06/lab_06.ipynb --execute
+      - run: python -m nbconvert --to pdf lab_07/lab_07.ipynb --execute
       - uses: actions/upload-artifact@v4
         with:
-          path: lab_06/lab_06.pdf
+          path: lab_07/lab_07.pdf
